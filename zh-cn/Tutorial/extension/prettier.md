@@ -17,23 +17,25 @@ keyword: format, prettier, 格式化
 
 2023年2月，HBuilderX更新formator-prettier插件到1.0.8版本，prettier库版本为2.8.4。
 
-### 更新内容
+### HBuilderX prettier配置项
 
-**formator-prettier插件更新的主要内容有：**
-
-- 升级prettier库版本到2.8.4，支持更多格式化配置项
-- 支持是否`启用Prettier`格式化插件
-- 支持项目下的配置文件`.prettierrc`
-- 支持项目下的忽略配置`.prettierignore`
-- 支持自定义Prettier的npm模块位置
+- 是否`启用Prettier`格式化插件
+- 当项目下存在Prettier配置时，优先使用项目下的配置
+- 自定义Prettier的npm模块位置
 - 更多见下图
 
 <img src="https://web-assets.dcloud.net.cn/hbuilderx-doc/prettier_108_setting.jpg" class="hd-img" />
 
-### 较之前版本，支持了更多格式化配置项
+### prettier格式化配置项
 
+- printWidth： 控制单行最大长度
+- semi： 控制每条语句是否加上分号
+- tabWidth： 控制一个tab对应的空格数
+- useTabs： 控制缩进用tab还是space
+- singleQuote：控制字符串是用单引号还是双引号
+- trailingComma： 是否去掉末尾的逗号
+- bracketSpacing： 控制json对象括号前后是否加上空格
 - jsxSingleQuote
-- trailingComma
 - arrowParens
 - htmlWhitespaceSensitivity
 - vueIndentScriptAndStyle
@@ -77,3 +79,9 @@ keyword: format, prettier, 格式化
 <img src="https://web-assets.dcloud.net.cn/hbuilderx-doc/prettier_108_code_indent.jpg" class="hd-img" />
 
 备注：`.editorconfig`文件中的缩进规则，高于Prettier缩进配置项。
+
+### .prettierignore忽略文件@prettierignore
+
+.prettierignore 用来配置哪些文件不需要被格式化
+
+<img src="https://web-assets.dcloud.net.cn/hbuilderx-doc/prettier_108_prettierignore.jpg" class="hd-img" />
